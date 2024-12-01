@@ -1,5 +1,6 @@
 "use client";
 import React, { useState, useEffect } from "react";
+import { FcBookmark } from 'react-icons/fc';
 
 const PostDetails = ({ heading, content, thumbnail, postID, restricted }) => {
   const [posts, setPosts] = useState([]);
@@ -27,8 +28,7 @@ const PostDetails = ({ heading, content, thumbnail, postID, restricted }) => {
     };
 
     fetchPosts();
-  }, []); 
-
+  }, [postID]);
   if (loading) {
     return <div>Loading...</div>;
   }

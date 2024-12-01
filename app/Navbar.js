@@ -29,7 +29,7 @@ const Navbar = () => {
       <div className="flex items-center justify-start gap-x-8">
         <Link href={"/"}>
           {" "}
-          <img src="/Logo.jpg" className=" w-40" />
+          <img src="/Logo.jpg"  alt="logo " className=" w-40" />
         </Link>
         <Link className="text-lg font-medium underline decoration-red-600" href={"/createPost"}>Create Post </Link>
 

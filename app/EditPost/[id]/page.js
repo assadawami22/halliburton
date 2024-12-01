@@ -3,7 +3,7 @@ import React, { useState, useEffect } from "react";
 import { useRouter } from 'next/navigation'; 
 import { useParams } from "next/navigation"; 
 
-const page = () => {
+const Page = () => {
   const router = useRouter(); 
   const { id: postID } = useParams(); 
   const [loading, setLoading] = useState(true);
@@ -142,4 +142,4 @@ const page = () => {
   );
 }
 
-export default page
+export default Page

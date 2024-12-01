@@ -3,7 +3,7 @@ import React, { useState } from 'react'
 import { useRouter } from 'next/navigation'; 
 
 
-const page = () => {
+const Page = () => {
   const [error, setError] = useState('');  
 
   const router =useRouter();
@@ -74,4 +74,4 @@ console.log( "the data is ",data);
   )
 }
 
-export default page
+export default Page

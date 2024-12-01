@@ -5,7 +5,7 @@ import { useParams } from "next/navigation";
 
 import { useRouter } from 'next/navigation'; 
 
-const page = () => {
+const Page = () => {
     const { id: postID } = useParams(); 
     const [post, setPost] = useState(null); 
   const [loading, setLoading] = useState(true);
@@ -170,4 +170,4 @@ const page = () => {
   );
 };
 
-export default page;
+export default Page;
